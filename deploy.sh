@@ -148,6 +148,12 @@ else
             "Effect": "Allow",
             "Action": ["sts:GetCallerIdentity", "sts:AssumeRole"],
             "Resource": "*"
+        },
+        {
+            "Sid": "SSMAccess",
+            "Effect": "Allow",
+            "Action": ["ssm:GetParameter", "ssm:GetParameters"],
+            "Resource": "*"
         }
     ]
 }'

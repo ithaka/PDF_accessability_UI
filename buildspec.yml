@@ -28,7 +28,6 @@ phases:
       - echo "Deploying all CDK stacks..."
       - >-
         cdk deploy --all --require-approval never \
-          --public-access-block-configuration false \
           -c PDF_TO_PDF_BUCKET=$PDF_TO_PDF_BUCKET \
           -c PDF_TO_HTML_BUCKET=$PDF_TO_HTML_BUCKET
 
